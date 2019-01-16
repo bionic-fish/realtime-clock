@@ -9,22 +9,52 @@
   <link rel="stylesheet" href="css/master.css">
   <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
 
 
 </head>
 <body>
-  <h1>JS Real-Time Clock</h1>
-  <div class="clock">
-    <div class="clock-face">
-      <div class="hand hour-hand"></div>
-      <div class="hand min-hand"></div>
-      <div class="hand second-hand"></div>
-    </div>
-  </div>
+    <div id="topbar">
+        <span class="topbar__left">
+            <h2>Interactive JS Projects</h2>
+            <h4>By C D Harris.</h4>
+        </span>
 
-  <div class="digital">
+        <span class="topbar__right">
+            <a href="https://bionic-fish.github.io/">portfolio</a>
+            <a href="https://bionic-fish.github.io/js-interactive/">projects</a>
+            <a href="https://github.com/bionic-fish">github</a>    
+        </span>
+    </div>
+
+  <h1>JS Real-Time Clock</h1>
+  <!-- clock wrapping container -->
+  <div class="container">
+    <!-- clock + clock elements -->
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    <!-- div .clock ends here -->
+    </div>
+<!-- div .container ends here -->
+</div>
+
+  <div class="container">
     <h3 id="digitalTime"></h3>
   </div>
+
+  <br>
+
+  <footer id="footer">
+      <div class="container">
+          <h4>Project Created By : C D Harris <br>
+          2019 &copy; </h4>
+
+      </div>
+  </footer>
 
 <script src="assets/js/index.js"></script>
 </body>
