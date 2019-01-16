@@ -12,6 +12,7 @@ body {
 }
 .container {
   margin-top: 20px;
+  height: fit-content;
 }
 h1 {
   margin-top: 20px;
@@ -30,6 +31,7 @@ h3 {
   letter-spacing: 15px;
   color: #fff;
   font-size: 1.4em;
+  padding-bottom: 50px;
 }
 /* Clock + Clock Face Properties */
 .clock {
@@ -84,6 +86,7 @@ h3 {
     padding: 10px;
     color: #fff;
     height: 50px;
+    
 }
 #topbar a {
   color: #fff;
@@ -91,15 +94,21 @@ h3 {
   padding: 5px;
 }
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  width: 100%;
   right: 0;
   left: 0;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: #000;
 }
 
 @media screen and (max-width: 500px) {
   .clock {
-    width: 50%;
+    width: 60%;
     height: 150px;
     border: 15px solid rgba(36, 124, 206, 0.5);
     border-radius: 50%;
@@ -114,12 +123,22 @@ h3 {
     transform: translate(-3px);
   }
   .container {
-    padding: 20px;
+    padding-bottom: 80px;
     max-width: 300px;
     margin: 10px auto;
+  }
+  .box {
+    height: 200px;
+    width: 200px;
+    background-color: #000;
   }
   .topbar__left,
   .topbar__right {
     float: none;
+  }
+  #footer {
+    position: fixed;
+    bottom: 0;
+    
   }
 }
